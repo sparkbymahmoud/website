@@ -1,36 +1,59 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Monospace Card</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        background: #f5f1ea;
-        font-family: monospace;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-      }
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minimal Card</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #f5f1ea;
+      font-family: monospace;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .text-card {
+      background: #eae6dd;
+      padding: 5vw;
+      max-width: 90vw;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #000;
+      text-align: left;
+      word-break: break-word;
+    }
+    .text-card a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .text-card a:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 768px) {
       .text-card {
-        background: #eae6dd;
-        border-radius: 12px;
-        padding: 32px;
-        font-size: 16px;
-        color: #000;
-        line-height: 1.6;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        font-size: 1.1rem;
+        max-width: 600px;
+        padding: 40px;
       }
-    </style>
-  </head>
-  <body>
-    <div class="text-card">
-      <div>text</div>
-      <div>texlttttttt</div>
-      <div>txxxxxxxxxxxxxxxxxxxxxxxxxt</div>
-      <div>@username|handle]</div>
-    </div>
-  </body>
+    }
+  </style>
+</head>
+<body>
+  <div class="text-card">
+    <div>text</div>
+    <div>texlttttttt</div>
+    <div>txxxxxxxxxxxxxxxxxxxxxxxxxxxxt</div>
+    <div><a href="https://twitter.com/yourhandle" target="_blank">@username|handle]</a></div>
+  </div>
+</body>
 </html>
