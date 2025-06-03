@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0eae1; /* Approximate background color from the image */
+    font-family: 'Courier New', Courier, monospace; /* Closest generic monospace font */
+    padding: 20px; /* Add some padding around the card for smaller screens */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Take full width of parent */
+    max-width: 600px; /* Max width for the card to prevent it from getting too large on wide screens */
+}
+
+.card {
+    background-color: #e0d9cd; /* Approximate card background color from the image */
+    border-radius: 8px;
+    padding: 30px; /* Adjust padding as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow similar to the image */
+    text-align: left;
+    width: 100%; /* Card takes full width of its container */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    font-size: clamp(1rem, 4vw, 1.5rem); /* Responsive font size */
+    line-height: 1.5; /* Adjust line height for readability */
+}
+
+.line {
+    margin: 0; /* Remove default paragraph margins */
+    color: #333; /* Dark text color */
+    white-space: pre-wrap; /* Allows text to wrap naturally while preserving formatting */
+    word-break: break-word; /* Breaks words if they are too long to fit */
+}
+
+.username {
+    margin-top: 1em; /* Add some space above the username line */
+}
+
+/* Media Queries for fine-tuning (optional, as clamp handles a lot) */
+@media (max-width: 480px) {
+    .card {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        padding: 40px;
+    }
+}
