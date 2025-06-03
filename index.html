@@ -7,43 +7,47 @@
   <style>
     * {
       box-sizing: border-box;
-    }
-    html, body {
       margin: 0;
       padding: 0;
-      background-color: #f5f1ea;
-      font-family: monospace;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
+
+    html, body {
+      height: 100%;
+      font-family: monospace;
+      background: #f5f1ea;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+
     .text-card {
       background: #eae6dd;
-      padding: 5vw;
-      max-width: 90vw;
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      font-size: 1rem;
-      line-height: 1.8;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       color: #000;
-      text-align: left;
+      width: 100%;
+      max-width: 400px;
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: center;
       word-break: break-word;
     }
+
     .text-card a {
-      color: inherit;
+      color: #000;
       text-decoration: none;
     }
+
     .text-card a:hover {
       text-decoration: underline;
     }
 
-    @media (min-width: 768px) {
+    @media (max-width: 320px) {
       .text-card {
-        font-size: 1.1rem;
-        max-width: 600px;
-        padding: 40px;
+        padding: 1rem;
+        font-size: 0.9rem;
       }
     }
   </style>
@@ -53,7 +57,9 @@
     <div>text</div>
     <div>texlttttttt</div>
     <div>txxxxxxxxxxxxxxxxxxxxxxxxxxxxt</div>
-    <div><a href="https://twitter.com/yourhandle" target="_blank">@username|handle]</a></div>
+    <div>
+      <a href="https://twitter.com/yourhandle" target="_blank">@username|handle]</a>
+    </div>
   </div>
 </body>
 </html>
