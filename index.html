@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minimal Card</title>
+  <link rel="icon" href="favicon.png" />
+  <meta property="og:title" content="Minimal Responsive Card" />
+  <meta property="og:description" content="A clean, responsive card layout built with pure HTML/CSS." />
+  <meta property="og:image" content="https://yourusername.github.io/preview.png" />
+  <meta property="og:url" content="https://yourusername.github.io/" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: monospace;
+      background: #f5f1ea;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    .text-card {
+      background: #eae6dd;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      color: #111;
+      width: 100%;
+      max-width: 400px;
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: center;
+      word-break: break-word;
+      animation: fadeIn 0.4s ease-out;
+    }
+
+    .text-card a {
+      color: #000;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .text-card a:hover {
+      text-decoration: underline;
+      opacity: 0.8;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 320px) {
+      .text-card {
+        padding: 1rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #111;
+      }
+
+      .text-card {
+        background: #1e1e1e;
+        color: #eee;
+      }
+
+      .text-card a {
+        color: #ccc;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="text-card">
+    <p>text</p>
+    <p>texlttttttt</p>
+    <p>txxxxxxxxxxxxxxxxxxxxxxxxxxxxt</p>
+    <p><a href="https://twitter.com/yourhandle" target="_blank">@username|handle]</a></p>
+  </div>
+</body>
+</html>
