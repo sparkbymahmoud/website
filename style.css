@@ -5,7 +5,10 @@ body {
     min-height: 100vh;
     margin: 0;
     background-color: #f0eae1; /* Approximate background color from the image */
-    font-family: 'Courier New', Courier, monospace; /* Closest generic monospace font */
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Force regular weight */
+    
     padding: 20px; /* Add some padding around the card for smaller screens */
     box-sizing: border-box; /* Include padding in element's total width and height */
 }
