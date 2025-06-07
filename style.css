@@ -24,6 +24,13 @@ a:hover {
   color: #DCEBC5; /* Changes color on hover */
   text-decoration: underline; /* Optional: adds underline on hover */
 }
+
+.logo {
+    display: block;
+    width: 100px;         /* Adjust size as needed */
+    margin: 0 auto 24px;  /* Centers the logo and adds space below */
+}
+
 .card-container {
     display: flex;
     justify-content: center;
