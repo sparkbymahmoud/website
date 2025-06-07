@@ -10,7 +10,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400; /* Force regular weight */
     
-    padding: 20px; /* Add some padding around the card for smaller screens */
+    padding: 24px; /* Multiple of 8 */
+    
     box-sizing: border-box; /* Include padding in element's total width and height */
 }
 
@@ -34,7 +35,7 @@ a:hover {
 .card {
     background-color: #3A3A3A;
     border-radius: 8px;
-    padding: 30px; /* Adjust padding as needed */
+    padding: 32px; /* Multiple of 8 */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow similar to the image */
     text-align: left;
     width: 100%; /* Card takes full width of its container */
@@ -51,18 +52,18 @@ a:hover {
 }
 
 .username {
-    margin-top: 1em; /* Add some space above the username line */
+    margin-top: 1.5em; /* 1.5 * 16px = 24px, a multiple of 8 */
+    /* Or use a pixel value directly: margin-top: 24px; */
 }
 
-/* Media Queries for fine-tuning (optional, as clamp handles a lot) */
 @media (max-width: 480px) {
     .card {
-        padding: 20px;
+        padding: 24px; /* Multiple of 8 */
     }
 }
 
 @media (min-width: 768px) {
     .card {
-        padding: 40px;
+        padding: 40px; /* Already a multiple of 8 */
     }
 }
