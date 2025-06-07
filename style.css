@@ -5,7 +5,7 @@ body {
     min-height: 100vh;
     margin: 0;
     
-    background-color: #2F2F2F
+    background-color: #2F2F2F;
 
     font-family: 'Roboto', sans-serif;
     font-weight: 400; /* Force regular weight */
@@ -23,7 +23,7 @@ body {
 }
 
 .card {
-    background-color: #3A3A3A
+    background-color: #3A3A3A;
     border-radius: 8px;
     padding: 30px; /* Adjust padding as needed */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow similar to the image */
@@ -36,7 +36,7 @@ body {
 
 .line {
     margin: 0; /* Remove default paragraph margins */
-    color: #768D5D
+    color: #768D5D;
     white-space: pre-wrap; /* Allows text to wrap naturally while preserving formatting */
     word-break: break-word; /* Breaks words if they are too long to fit */
 }
