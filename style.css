@@ -14,6 +14,15 @@ body {
     box-sizing: border-box; /* Include padding in element's total width and height */
 }
 
+a {
+  color: #b5c99a; /* Sets the default link color */
+  text-decoration: none; /* Optional: removes the underline */
+}
+
+a:hover {
+  color: #DCEBC5; /* Changes color on hover */
+  text-decoration: underline; /* Optional: adds underline on hover */
+}
 .card-container {
     display: flex;
     justify-content: center;
@@ -36,7 +45,7 @@ body {
 
 .line {
     margin: 0; /* Remove default paragraph margins */
-    color: #768D5D;
+    color: #f2f5f0;
     white-space: pre-wrap; /* Allows text to wrap naturally while preserving formatting */
     word-break: break-word; /* Breaks words if they are too long to fit */
 }
